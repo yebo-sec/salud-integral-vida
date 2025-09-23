@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Amparo Angarita | Salud Integral y Vida</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fuente e íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Foto de perfil -->
+        <img src="foto.jpg" alt="Amparo Angarita" class="profile-pic fade-in">
+
+        <h1 class="fade-in">Amparo Angarita</h1>
+        <p class="tagline fade-in">Salud Integral y Vida · Asesora en seguros médicos (ACA, Medicare y subsidios)</p>
+
+        <!-- Enlaces estilo Linktree -->
+        <div class="links fade-in">
+            <a href="https://api.whatsapp.com/send/?phone=1407545918&text&type=phone_number&app_absent=0"
+                target="_blank" class="whatsapp">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+            <a href="https://www.facebook.com/search/top?q=salud%20integral%20y%20vida" target="_blank"
+                class="facebook">
+                <i class="fab fa-facebook"></i> Facebook
+            </a>
+            <a href="https://www.instagram.com/saludintegralyvida.fl/" target="_blank" class="instagram">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="https://www.linkedin.com/in/amparo-angarita-a663b924/" target="_blank" class="linkedin">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://saludintegralyvida-fl.com/" target="_blank" class="web">
+                <i class="fas fa-globe"></i> Web Oficial
+            </a>
+            <a href="https://www.healthsherpa.com/?_agent_id=amparo-angarita" target="_blank" class="health">
+                <i class="fas fa-hospital"></i> HealthSherpa
+            </a>
+            <a href="mailto:abc.saludintegralyvida@gmail.com" class="email">
+                <i class="fas fa-envelope"></i> Enviar correo
+            </a>
+            <a href="Cambios-Clave-en-el-Marketplace-y-Ayuda-Gubernamental-para-Seguros-Medicos-en-2026.pdf"
+                target="_blank" class="pdf">
+                <i class="fas fa-file-pdf"></i> Guía de Cambios 2026 (PDF)
+            </a>
+        </div>
+
+        <footer class="fade-in">
+            © 2025 Amparo Angarita
+        </footer>
+    </div>
+
+    <!-- JS Animaciones -->
+    <script>
+        // Animación de aparición en cascada
+        document.addEventListener("DOMContentLoaded", () => {
+            const elements = document.querySelectorAll(".fade-in");
+            elements.forEach((el, index) => {
+                el.style.opacity = 0;
+                el.style.transform = "translateY(20px)";
+                setTimeout(() => {
+                    el.style.opacity = 1;
+                    el.style.transform = "translateY(0)";
+                    el.style.transition = "all 0.6s ease";
+                }, index * 300);
+            });
+        });
+
+        // Animación al hacer clic en botones
+        const buttons = document.querySelectorAll(".links a");
+        buttons.forEach(btn => {
+            btn.addEventListener("click", () => {
+                btn.style.transform = "scale(0.95)";
+                setTimeout(() => btn.style.transform = "scale(1)", 200);
+            });
+        });
+    </script>
+</body>
+
+</html>
